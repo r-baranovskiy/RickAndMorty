@@ -1,5 +1,6 @@
 import UIKit
 
+/// Root tab controller
 final class RMTabBarController: UITabBarController {
     
     private let charactersVC = RMCharactersViewController()
