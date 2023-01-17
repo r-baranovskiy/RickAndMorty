@@ -16,8 +16,8 @@ struct RMCharacter: Codable {
 }
 
 enum RMCharacterGender: String, Codable {
-    case female = "Female"
     case male = "Male"
+    case female = "Female"
     case genderless = "Genderless"
     case unknown = "unknown"
 }
