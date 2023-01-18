@@ -28,6 +28,7 @@
 		80D6E4E729574E07000C66C0 /* RMLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6E4E629574E07000C66C0 /* RMLocationsViewController.swift */; };
 		80D6E4E929574E18000C66C0 /* RMEpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6E4E829574E18000C66C0 /* RMEpisodesViewController.swift */; };
 		80D6E4EB29574E2C000C66C0 /* RMSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D6E4EA29574E2C000C66C0 /* RMSettingsViewController.swift */; };
+		80E8E1B929788910005ABE0D /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E8E1B829788910005ABE0D /* Gradient.swift */; };
 		80F25D13295A36E3000D69DD /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F25D12295A36E2000D69DD /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		80D6E4E629574E07000C66C0 /* RMLocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMLocationsViewController.swift; sourceTree = "<group>"; };
 		80D6E4E829574E18000C66C0 /* RMEpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEpisodesViewController.swift; sourceTree = "<group>"; };
 		80D6E4EA29574E2C000C66C0 /* RMSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMSettingsViewController.swift; sourceTree = "<group>"; };
+		80E8E1B829788910005ABE0D /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
 		80F25D12295A36E2000D69DD /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				80F25D12295A36E2000D69DD /* UIView + Extension.swift */,
+				80E8E1B829788910005ABE0D /* Gradient.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				80D6E4C429574948000C66C0 /* SceneDelegate.swift in Sources */,
 				803E26E5297727C600F16B6F /* RMCharacterListView.swift in Sources */,
 				80D6E4EB29574E2C000C66C0 /* RMSettingsViewController.swift in Sources */,
+				80E8E1B929788910005ABE0D /* Gradient.swift in Sources */,
 				80D6E4DE29574D02000C66C0 /* RMLocation.swift in Sources */,
 				80D6E4E029574D0E000C66C0 /* RMCharacter.swift in Sources */,
 				80D6E4E529574DFA000C66C0 /* RMCharactersViewController.swift in Sources */,
