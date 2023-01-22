@@ -102,6 +102,7 @@ extension RMCharacterDetailViewController: UICollectionViewDelegate, UICollectio
                 for: indexPath) as? RMCharacterEpisodeCollectionViewCell else {
                 fatalError()
             }
+            cell.backgroundColor = .red
             cell.configure(with: viewModels[indexPath.row])
             return cell
         }
