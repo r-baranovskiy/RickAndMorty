@@ -9,7 +9,7 @@ final class RMRequest {
     }
     
     /// Desired endpoint
-    private let endPoint: RMEndpoint
+    let endPoint: RMEndpoint
     
     /// Patch components for API, if any
     private let pathComponents: [String]
@@ -60,10 +60,10 @@ final class RMRequest {
         pathComponents: [String] = [],
         queryParameters: [URLQueryItem] = []
     ) {
-            self.endPoint = endPoint
-            self.pathComponents = pathComponents
-            self.queryParameters = queryParameters
-        }
+        self.endPoint = endPoint
+        self.pathComponents = pathComponents
+        self.queryParameters = queryParameters
+    }
     
     /// Attempt to create request
     /// - Parameters:
