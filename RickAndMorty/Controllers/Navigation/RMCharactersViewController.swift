@@ -2,17 +2,27 @@ import UIKit
 
 /// Controller to show and search for Characters
 final class RMCharactersViewController: UIViewController, RMCharacterListViewDelegate {
-
+    
     private let characterListView = RMCharacterListView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Characters"
+        configureNavigationBar()
         characterListView.delegate = self
         view.addSubviewWithoutTranslates(characterListView)
-        
         setConstraints()
+    }
+    
+    private func configureNavigationBar() {
+        title = "Characters"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .search, target: self, action: #selector(didTapSearch))
+    }
+    
+    @objc
+    private func didTapSearch() {
+        
     }
     
     // MARK: - RMCharacterListViewDelegate

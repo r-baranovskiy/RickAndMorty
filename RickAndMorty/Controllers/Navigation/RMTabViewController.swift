@@ -7,7 +7,7 @@ final class RMTabBarController: UITabBarController {
     private let locationsVC = RMLocationsViewController()
     private let episodesVC = RMEpisodesViewController()
     private let settingsVC = RMSettingsViewController()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
@@ -34,7 +34,5 @@ final class RMTabBarController: UITabBarController {
         navVC.navigationBar.prefersLargeTitles = true
         return navVC
     }
-
-
 }
 

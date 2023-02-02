@@ -38,5 +38,4 @@ final class RMAPICacheManager {
             cacheDictionary[endpoint] = NSCache<NSString, NSData>()
         }
     }
-    
 }

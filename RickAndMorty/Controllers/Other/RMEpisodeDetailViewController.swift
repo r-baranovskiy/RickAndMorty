@@ -4,6 +4,7 @@ import UIKit
 final class RMEpisodeDetailViewController: UIViewController {
     
     private let viewModel: RMEpisodeDetailViewViewModel
+    private let detailView = RMEpisodeDetailView()
     
     // MARK: - Init
     
@@ -20,7 +21,28 @@ final class RMEpisodeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Episode"
+        configureNavigationBar()
+        view.addSubviewWithoutTranslates(detailView)
+        addConstraints()
     }
     
+    private func configureNavigationBar() {
+        title = "Episode"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .action, target: self, action: #selector(didTapShare))
+    }
+    
+    @objc
+    private func didTapShare() {
+        
+    }
+    
+    private func addConstraints() {
+        NSLayoutConstraint.activate([
+            detailView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            detailView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            detailView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+            detailView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor)
+        ])
+    }
 }

@@ -1,6 +1,6 @@
 import Foundation
 
-class RMEpisodeDetailViewViewModel {
+final class RMEpisodeDetailViewViewModel {
     
     private let endpointUrl: URL?
     

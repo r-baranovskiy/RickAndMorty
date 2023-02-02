@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 protocol RMEpisodeDataRender {
     var name: String { get }
@@ -21,10 +21,13 @@ final class RMCharacterEpisodeCollectionViewCellViewModel: Hashable, Equatable {
         }
     }
     
+    public let borderColor: UIColor
+    
     // MARK: - Init
     
-    init(episodeDataUrl: URL?) {
+    init(episodeDataUrl: URL?, borderColor: UIColor = .systemBlue) {
         self.episodeDataUrl = episodeDataUrl
+        self.borderColor = borderColor
     }
     
     // MARK: - Public

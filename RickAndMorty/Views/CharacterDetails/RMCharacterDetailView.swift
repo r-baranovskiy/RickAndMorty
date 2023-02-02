@@ -79,5 +79,4 @@ final class RMCharacterDetailView: UIView {
             collectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
     }
-    
 }

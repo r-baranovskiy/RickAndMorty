@@ -29,7 +29,7 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
         view.backgroundColor = .secondarySystemBackground
         return view
     }()
-
+    
     // MARK: - Init
     
     override init(frame: CGRect) {
@@ -62,7 +62,7 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
             iconImageView.heightAnchor.constraint(equalToConstant: 30),
             iconImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 35),
             iconImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-          
+            
             valueLabel.leadingAnchor.constraint(equalTo: iconImageView.trailingAnchor, constant: 10),
             valueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
             valueLabel.topAnchor.constraint(equalTo: contentView.topAnchor),
@@ -71,7 +71,7 @@ final class RMCharacterInfoCollectionViewCell: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
-         super.prepareForReuse()
+        super.prepareForReuse()
         valueLabel.text = nil
         titleLabel.text = nil
         iconImageView.image = nil

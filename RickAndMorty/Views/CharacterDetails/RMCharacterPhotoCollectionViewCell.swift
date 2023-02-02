@@ -1,7 +1,7 @@
 import UIKit
 
 final class RMCharacterPhotoCollectionViewCell: UICollectionViewCell {
-        
+    
     static let cellIdentifer = "RMCharacterPhotoCollectionViewCell"
     
     private let imageView: UIImageView = {
@@ -31,7 +31,7 @@ final class RMCharacterPhotoCollectionViewCell: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
-         super.prepareForReuse()
+        super.prepareForReuse()
         imageView.image = nil
     }
     

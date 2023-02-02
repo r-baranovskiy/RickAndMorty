@@ -8,11 +8,22 @@ final class RMEpisodesViewController: UIViewController, RMEpisodeListViewDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
-        title = "Episodes"
+        configureNavigationBar()
         episodeListView.delegate = self
         view.addSubviewWithoutTranslates(episodeListView)
         
         setConstraints()
+    }
+    
+    private func configureNavigationBar() {
+        title = "Episodes"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .search, target: self, action: #selector(didTapSearch))
+    }
+    
+    @objc
+    private func didTapSearch() {
+        
     }
     
     // MARK: - RMEpisodeListViewDelegate
